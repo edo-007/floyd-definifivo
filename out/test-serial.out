@@ -1,0 +1,17 @@
+nvc -Wall  -D_PRINT_DISTANCE=1 -g -c -o lib/floyd-library.o lib/floyd-library.c 
+nvc -Wall  -D_PRINT_DISTANCE=1 -g -c floyd-main.c
+nvc -Wall  -D_PRINT_DISTANCE=1 -g -o floyd-main floyd-main.o lib/floyd-library.o lib/time-library.o 
+[1m
+:: Serial version ::[m
+media: 0.000004
+
+D     [1m	[4m#0  [m[1m	[4m#1  [m[1m	[4m#2  [m[1m	[4m#3  [m[1m	[4m#4  [m[1m	[4m#5  [m[1m	[4m#6  [m[1m	[4m#7  [m
+
+[1m#0 | [m	 0  	 1000  	 1000  	 9  	 9  	 1000  	 5  	 1000  
+[1m#1 | [m	 1000  	 0  	 9  	 1000  	 1000  	 1000  	 1000  	 0  
+[1m#2 | [m	 9  	 5  	 0  	 2  	 3  	 1000  	 3  	 8  
+[1m#3 | [m	 1000  	 4  	 2  	 0  	 1000  	 4  	 1000  	 8  
+[1m#4 | [m	 1000  	 1000  	 8  	 1000  	 0  	 7  	 8  	 6  
+[1m#5 | [m	 1000  	 0  	 8  	 1000  	 5  	 0  	 1000  	 1000  
+[1m#6 | [m	 1000  	 1000  	 6  	 8  	 1000  	 1000  	 0  	 1000  
+[1m#7 | [m	 2  	 2  	 1000  	 1000  	 9  	 1000  	 6  	 0  
